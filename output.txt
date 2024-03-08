@@ -1,0 +1,108 @@
+Random Forest
+#### Before Preprocessing ####
+Shape:  8719
+Number of Columns:  54
+#### After Preprocessing ####
+Shape:  8719
+Number of Columns:  37
+Accuracy (Random Forest): 0.9457186544342507
+AUROC (Random Forest): 0.9781121464479763
+Classification Report (Random Forest):
+               precision    recall  f1-score   support
+
+         0.0       0.92      0.93      0.93       940
+         1.0       0.96      0.95      0.96      1676
+
+    accuracy                           0.95      2616
+   macro avg       0.94      0.94      0.94      2616
+weighted avg       0.95      0.95      0.95      2616
+
+
+
+
+XGBoost
+#### Before Preprocessing ####
+Shape:  8719
+Number of Columns:  54
+#### After Preprocessing ####
+Shape:  8719
+Number of Columns:  37
+Accuracy (XGBoost): 0.9499235474006116
+AUROC (XGBoost): 0.976471969735439
+Classification Report (XGBoost):
+               precision    recall  f1-score   support
+
+         0.0       0.92      0.95      0.93       940
+         1.0       0.97      0.95      0.96      1676
+
+    accuracy                           0.95      2616
+   macro avg       0.94      0.95      0.95      2616
+weighted avg       0.95      0.95      0.95      2616
+
+
+
+
+LightGBM
+[LightGBM] [Info] Number of positive: 3896, number of negative: 2207
+[LightGBM] [Warning] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000599 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 1547
+[LightGBM] [Info] Number of data points in the train set: 6103, number of used features: 34
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.638375 -> initscore=0.568316
+[LightGBM] [Info] Start training from score 0.568316
+Accuracy (LightGBM): 0.9548929663608563
+Reduced Accuracy (LightGBM): 0.7308868501529052
+AUROC (LightGBM): 0.9805311532016452
+Reduced AUROC (LightGBM): 0.7804448281115117
+Classification Report (LightGBM):
+               precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94       940
+         1.0       0.97      0.96      0.96      1676
+
+    accuracy                           0.95      2616
+   macro avg       0.95      0.95      0.95      2616
+weighted avg       0.96      0.95      0.95      2616
+
+
+
+
+Multilayer Perceptron
+#### Before Preprocessing ####
+Shape:  8719
+Number of Columns:  54
+#### After Preprocessing ####
+Shape:  8719
+Number of Columns:  37
+Accuracy (MLP): 0.6410550458715596
+AUROC (MLP): 0.4917810262529832
+Classification Report (MLP):
+               precision    recall  f1-score   support
+
+         0.0       1.00      0.00      0.00       940
+         1.0       0.64      1.00      0.78      1676
+
+    accuracy                           0.64      2616
+   macro avg       0.82      0.50      0.39      2616
+weighted avg       0.77      0.64      0.50      2616
+
+
+
+
+Guessing the Petitioner Always Wins
+Accuracy (Guessing the Petitioner Wins): 0.6390641128569791
+AUROC (Guessing the Petitioner Wins): 0.5
+Classification Report (Guessing the Petitioner Wins):
+               precision    recall  f1-score   support
+
+         0.0       0.00      0.00      0.00      3147
+         1.0       0.64      1.00      0.78      5572
+
+    accuracy                           0.64      8719
+   macro avg       0.32      0.50      0.39      8719
+weighted avg       0.41      0.64      0.50      8719
+
+
+
+
